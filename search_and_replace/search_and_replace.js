@@ -1,5 +1,4 @@
 function isUpper(str){
-  console.log(str)
   if(str[0] === str.toUpperCase()){
     return true;
   } else {
@@ -12,7 +11,6 @@ function myReplace(str, before, after) {
   let location = arr.indexOf(before);
   let caseWord = after.substring(1);
 
-  console.log(arr[location])
   if(isUpper(arr[location][0]) === true){
     arr[location] = after[0].toUpperCase() + caseWord;
     return arr.join(' ');
