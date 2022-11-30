@@ -41,7 +41,6 @@ function translatePigLatin(str) {
     for(let i = 0; i < str.length; i++){
       if(isVowel(str[i]) === false){
         cluster += str[i];
-        console.log(cluster);
       } else {
         if(hasVowel(cluster))
         console.log(str.substring(i)+cluster+'ay')
@@ -50,4 +49,4 @@ function translatePigLatin(str) {
     }
   }
 }
-
+console.log(translatePigLatin('rhythm'));
